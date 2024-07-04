@@ -9,6 +9,6 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: 'https://tauseefkhan.xyz',
   integrations: [tailwind(), icon(), compress()],
-  output: "hybrid",
+  output: "static",
   adapter: vercel()
 });

@@ -7,8 +7,9 @@ import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://tauseefkhan.xyz',
+  base: '/src/pages/',
   integrations: [tailwind(), icon(), compress()],
-  output: 'static',
-  adapter: vercel(),
-  site: 'https://tauseefkhan.xyz'
+  output: "static",
+  adapter: vercel()
 });
